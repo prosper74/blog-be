@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "tags": {
+      "via": "posts",
+      "collection": "tag"
+    },
+    "category": {
+      "via": "posts",
+      "model": "category"
+    },
+    "comments": {
+      "via": "post",
+      "collection": "comment"
+    },
+    "favourites": {
+      "via": "post",
+      "collection": "favourite"
+    },
+    "likes": {
+      "via": "post",
+      "collection": "like"
+    }
+  }
+}
