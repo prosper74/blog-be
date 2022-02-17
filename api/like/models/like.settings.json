@@ -15,10 +15,6 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "likes"
-    },
-    "post": {
-      "model": "post",
-      "via": "likes"
     }
   }
 }

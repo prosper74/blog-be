@@ -17,8 +17,8 @@
       "required": true
     },
     "posts": {
-      "collection": "post",
-      "via": "category"
+      "via": "category",
+      "collection": "post"
     },
     "thumbnail": {
       "model": "file",

@@ -17,8 +17,8 @@
       "required": true
     },
     "post": {
-      "model": "post",
-      "via": "comments"
+      "via": "comments",
+      "model": "post"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",

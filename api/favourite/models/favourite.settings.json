@@ -17,8 +17,8 @@
       "via": "favourites"
     },
     "post": {
-      "model": "post",
-      "via": "favourites"
+      "via": "favourites",
+      "model": "post"
     }
   }
 }

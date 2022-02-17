@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "post"
+    "name": "post",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -50,9 +51,8 @@
       "via": "post",
       "collection": "favourite"
     },
-    "likes": {
-      "via": "post",
-      "collection": "like"
+    "like": {
+      "type": "integer"
     }
   }
 }
